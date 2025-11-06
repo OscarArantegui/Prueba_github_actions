@@ -1,13 +1,21 @@
-name: Prueba de mensjae github actions
+name: Mostrar Mensaje, Fecha y Java (Solo Comprobar)
 
 on:
   push:
-    branches: [main]
-    
+    branches: [ main ]
+
 jobs:
-  build:
+  mostrar-informacion:
     runs-on: ubuntu-latest
+
     steps:
-      name: Mostrar mensaje
-      run:
-        echo "Hola"
+      - name: Mostrar mensaje
+        run: echo "¡Hola! Esta es la GitHub Action ejecutándose."
+
+      - name: Mostrar fecha y hora
+        run: echo "La fecha y hora del servidor es: $(date)"
+
+      - name: Mostrar versión de Java (por defecto)
+        run: |
+          echo "Comprobando la versión de Java preinstalada en el runner..."
+          java -version 2>&1
