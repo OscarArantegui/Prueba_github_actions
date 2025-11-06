@@ -21,4 +21,4 @@ jobs:
     - name: Mostrar versión de Java (por defecto)
       run: |
         echo "Comprobando la versión de Java preinstalada en el runner..."
-        java --version 2>&1
+        java --version
