@@ -15,7 +15,8 @@ jobs:
 
     - name: Mostrar fecha y hora
       run: 
-        echo "La fecha y hora del servidor es: $(date)"
+        echo "La fecha y hora del servidor es: "
+        date
 
     - name: Mostrar versión de Java (por defecto)
       run: |
