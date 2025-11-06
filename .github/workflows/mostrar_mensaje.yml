@@ -10,10 +10,12 @@ jobs:
 
     steps:
     - name: Mostrar mensaje
-      run: echo "¡Hola! Esta es la GitHub Action ejecutándose."
+      run: 
+        echo "¡Hola! Esta es la GitHub Action ejecutándose."
 
     - name: Mostrar fecha y hora
-      run: echo "La fecha y hora del servidor es: $(date)"
+      run: 
+        echo "La fecha y hora del servidor es: $(date)"
 
     - name: Mostrar versión de Java (por defecto)
       run: |
